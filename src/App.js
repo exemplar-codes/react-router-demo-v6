@@ -9,6 +9,9 @@ function App() {
   return (
     <div>
       <MainHeader />
+      <Routes>
+        <Route path="*" element={<h1>Always rendered</h1>} />
+      </Routes>
       <main>
         <Routes>
           <Route path="/welcome" element={<Welcome />} />
