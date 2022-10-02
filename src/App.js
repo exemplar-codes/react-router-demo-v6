@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import Welcome from './pages/Welcome';
 import Products from './pages/Products';
@@ -10,7 +10,7 @@ function App() {
     <div>
       <MainHeader />
       <main>
-        <Switch>
+        <Routes>
           <Route path='/welcome'>
             <Welcome />
           </Route>
@@ -20,7 +20,7 @@ function App() {
           <Route path='/products/:productId'>
             <ProductDetail />
           </Route>
-        </Switch>
+        </Routes>
       </main>
     </div>
   );
